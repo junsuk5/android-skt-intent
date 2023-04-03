@@ -1,54 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="화면 이동" />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-        <EditText
-            android:id="@+id/edit_text_1"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <Button
-            android:layout_weight="1"
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="값 넘기기" />
+            android:text="화면 이동" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="값 넘기기" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화 걸기" />
+
+        <Button
+            android:id="@+id/share_text_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="텍스트 전달" />
+
+        <Button
+            android:id="@+id/open_web_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹 브라우저 실행" />
+
+
     </LinearLayout>
+</ScrollView>
 
-    <Button
-        android:id="@+id/call_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="전화 걸기" />
 
-    <Button
-        android:id="@+id/share_text_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="텍스트 전달" />
-
-    <Button
-        android:id="@+id/open_web_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="웹 브라우저 실행" />
-
-</LinearLayout>
