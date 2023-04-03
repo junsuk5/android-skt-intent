@@ -12,11 +12,9 @@ class TargetActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textView)
 
         // 나를 실행한 Intent가 뭔가?
-        if (intent != null) {
-            // Intent에 뭐가 들어있나?
-            val value = intent.getStringExtra("value") ?: "No Data"
+        // Intent에 뭐가 들어있나?
+        val value = intent?.getStringExtra("value") ?: "No Data"
 
-            textView.text = value
-        }
+        textView.text = value
     }
 }
